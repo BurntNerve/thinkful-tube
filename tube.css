@@ -201,3 +201,17 @@ table {
     cursor: pointer;
     outline: 0;
 }
+
+#search-container {
+    height: 600px;
+    width: 100%;
+
+}
+
+.image-container {
+    height: 300px;
+    width: 400px;
+    border: 1px solid grey;
+    display: inline-block;
+    margin: 10px;
+}
