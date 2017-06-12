@@ -154,12 +154,12 @@ table {
 
 .app-nav-logo {
     position: relative;
-    right: 111px;
+    right: 107px;
     bottom: 13px;
 }
 
 .container {
-    height: 600px;
+    height: 300px;
 }
 
 .tubeForm {
@@ -167,8 +167,8 @@ table {
     width: 50%;
     text-align: center;
     position: relative;
-    top: 300px;
-    left: 60px;
+    top: 100px;
+    left: 40px;
 }
 
 #tubeText {
@@ -192,17 +192,18 @@ table {
     background-color: white;
     box-sizing: border-box;
     display: block;
-    border: 1px solid grey;
+    border: 1px solid #93e1a7;
     transition: background-color .8s, color.8s;
     position: relative;
     top: 70px;
     margin: 0 auto;
     right: 50px;
     outline: 0;
+    color: #93e1a7;
 }
 
 #tubeSubmit:hover {
-    background-color: grey;
+    background-color: #93e1a7;
     color: white;
     cursor: pointer;
     outline: 0;
@@ -213,18 +214,35 @@ table {
     display: block;
     margin: 0 auto;
     text-align: center;
+    background-color: #93e1a7;
+    transition: background-color .5s ease;
 
 }
 
 .image-container {
-    height: 220px;
+    height: 270px;
     width: 320px;
     display: inline-block;
     margin: 20px;
     text-align: center;
+    cursor: pointer;
+
 }
+
 
 .js-tube-image {
     margin-bottom: 10px;
 }
+
+.js-tube-link {
+    pointer-events: none;
+}
+
+.dimmed {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    transition: background-color .5s ease;
+}
+
+
+
 
