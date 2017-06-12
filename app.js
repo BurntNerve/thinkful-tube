@@ -71,7 +71,7 @@ HTML_VIDEO_TEMPLATE = (
                 $(".image-container").addClass("animated fadeOutLeft");
                 var stringHref = String($(this).find("a").attr("href"));
                 var callingId = stringHref.slice(32);
-                var prefix = "https://www.youtube.com/embed/" + callingId;
+                var prefix = "https://www.youtube.com/embed/" + callingId + "?autoplay=1";
                 $('.image-container').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
                     $('#search-container').html(renderVideo());
                     $('#search-container').addClass("dimmed");
