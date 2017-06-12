@@ -4,7 +4,8 @@ ENDPOINT = "https://www.googleapis.com/youtube/v3/search"
 
 HTML_TEMPLATE = (
     '<div class="image-container">' +
-    '<img class="js-tube-image" src="">' +
+        '<img class="js-tube-image" src="">' +
+        '<h2 class="js-tube-description"></h2>' +
     '</div>'
 );
 
@@ -26,13 +27,16 @@ function handleThinkfulTube() {
 
     function renderResult(result) {
         var template = $(HTML_TEMPLATE);
-        template.find("js-tube-image").css("src", result.snippet.thumbnails.default.url)
+        var counter = 0;
+        template.find(".js-tube-image").attr("src", result.snippet.thumbnails.medium.url)
+        template.find(".js-tube-description").text(result.snippet.title)
         console.log(result.snippet.thumbnails.default.url)
+        counter++;
         return template;
     }
 
     function displayYouTubeSearchData(data) {
-        var results = data.items.map(function(item, index) {
+        var results = data.items.map(function(item) {
             return renderResult(item);
         });
 

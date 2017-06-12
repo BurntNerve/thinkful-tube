@@ -147,6 +147,7 @@ table {
     position: relative;
     top: 20px;
     color: white;
+
 }
 
 .app-nav-logo {
@@ -156,7 +157,7 @@ table {
 }
 
 .container {
-    height: 1000px;
+    height: 600px;
 }
 
 .tubeForm {
@@ -174,8 +175,11 @@ table {
     border: 0;
     border-bottom: 1px solid grey;
     outline: 0;
+    display: block;
     font-size: 30px;
-    margin-right: 30px;
+    margin: 0 auto;
+    position: relative;
+    right: 55px;
 }
 
 #tubeSubmit {
@@ -191,7 +195,7 @@ table {
     position: relative;
     top: 70px;
     margin: 0 auto;
-    right: 30px;
+    right: 50px;
     outline: 0;
 }
 
@@ -203,15 +207,24 @@ table {
 }
 
 #search-container {
-    height: 600px;
-    width: 100%;
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 
 }
 
 .image-container {
     height: 300px;
-    width: 400px;
+    width: 350px;
     border: 1px solid grey;
     display: inline-block;
     margin: 10px;
+    text-align: center;
 }
+
+.js-big-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
