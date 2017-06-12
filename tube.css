@@ -86,6 +86,8 @@ video {
     font: inherit;
     vertical-align: baseline;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -215,16 +217,14 @@ table {
 }
 
 .image-container {
-    height: 300px;
-    width: 350px;
-    border: 1px solid grey;
+    height: 220px;
+    width: 320px;
     display: inline-block;
-    margin: 10px;
+    margin: 20px;
     text-align: center;
 }
 
-.js-big-container {
-    width: 90%;
-    margin: 0 auto;
+.js-tube-image {
+    margin-bottom: 10px;
 }
 
